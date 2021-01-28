@@ -1,0 +1,22 @@
+.List {
+   background-color: #eee;
+   width: 80%;
+   margin: 0 auto;
+   box-sizing: border-box;
+   padding: 10px 0px;
+   border-radius: 10px;
+}
+
+.List p {
+    font-size: 1.8rem;
+}
+
+.List ul {
+    list-style: none;
+}
+
+.List ul li {
+    font-size: 1.5rem;
+    margin: 20px;
+    text-align: left;
+}

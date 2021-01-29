@@ -11,7 +11,8 @@ class DoughMaker extends Component {
         water: '',
         flour: '',
         yeast: '',
-        salt: ''
+        salt: '',
+        valid: true
     }
 
 
@@ -32,16 +33,35 @@ class DoughMaker extends Component {
         })
 
 
-        console.log(this.state.water)
+
     }
 
     ballsInputHandler = (event) => {
-        this.setState({ input: event.target.value })
+        let num = event.target.value;
+
+
+        if (!Number(num) && num.length !== 0) {
+
+            this.setState({ valid: false })
+        }
+        else { this.setState({ valid: true }) }
+
+
+
+
+        this.setState({ input: num })
+
+
+
     }
+
 
 
     render() {
 
+        let inputClass = ``;
+
+        this.state.valid ? inputClass = `${classes.Input}` : inputClass = `${classes.Input} ${classes.InputDanger}`;
 
 
 
@@ -49,7 +69,7 @@ class DoughMaker extends Component {
             <div className={classes.DoughMaker}>
                 <form onSubmit={this.ballsSubmitHandler}>
                     <input
-                        className={classes.Input}
+                        className={inputClass}
                         onChange={this.ballsInputHandler}
                         value={this.state.value}
                         type="text"
@@ -64,6 +84,7 @@ class DoughMaker extends Component {
                         flour={this.state.flour}
                         yeast={this.state.yeast}
                         salt={this.state.salt}
+                        valid={this.state.valid}
                     />
                 </form>
 

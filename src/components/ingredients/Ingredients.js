@@ -2,6 +2,11 @@ import React from 'react';
 import classes from './Ingredients.module.css';
 
 export default function Ingredients(props) {
+
+
+
+
+
     return (
         <div className={classes.List}>
             <p>To make {props.balls} balls you need:</p>

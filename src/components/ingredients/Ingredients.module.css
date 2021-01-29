@@ -9,14 +9,39 @@
 
 .List p {
     font-size: 1.8rem;
+    padding: 5px 10px;
 }
 
 .List ul {
     list-style: none;
+    padding: 0;
 }
 
 .List ul li {
+    
     font-size: 1.5rem;
     margin: 20px;
     text-align: left;
+    
 }
+
+@media (max-width: 500px) {
+    .List {
+
+    }
+
+    .List p {
+        font-size: 1.5rem;
+    }
+    
+    .List ul {
+        list-style: none;
+    }
+    
+    .List ul li {
+        font-size: 1.5rem;
+        margin: 20px;
+        text-align: left;
+    }
+}
+

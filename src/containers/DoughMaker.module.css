@@ -1,7 +1,7 @@
 .DoughMaker {
     text-align: center;
     width: 600px;
-    height: 600px;
+    height: 500px;
     border: 1px solid #ccc;
     box-shadow: 5px 3px 15px 2px rgba(0,0,0,0.79);
     border-radius: 10px;
@@ -10,9 +10,11 @@
     margin-top: 40px;
 }
 
+
+
 .Input {
     width: 50%;
-    
+    outline: none;
     height: 25px;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -23,7 +25,12 @@
     margin-top: 40px;
 }
 
+.InputDanger {
+    background-color: salmon;
+}
+
 .Button {
+    outline: none;
     margin: 10px;
     height: 30px;
     border: 1px solid #ccc;
@@ -35,4 +42,24 @@
 
 .Button:hover {
     background-color: #eee;
+}
+
+@media (max-width: 500px) { 
+    .DoughMaker {
+        width: 100%;
+        height: 550px;
+        
+    }
+
+    .Input {
+        width: 90%;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .Button {
+        height: 50px;
+        width: 180px;
+        font-size: 1.3rem;
+    }
 }

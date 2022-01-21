@@ -1,0 +1,229 @@
+/*CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe, button,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, input,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  font-family: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF  CSS RESET */
+
+body {
+  background: url("dough_pic.jpg") center center fixed no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Dongle", sans-serif;
+}
+
+.glassContainer {
+  width: 320px;
+  height: 80vh;
+  margin: 50px auto;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ballsInput {
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  color: #000;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+}
+
+.howManyBalls {
+  font-size: 5rem;
+  justify-self: center;
+}
+
+.icon {
+  font-size: 4.6rem;
+  justify-self: center;
+  transition: all 0.05s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pressed {
+  transform: scale(1.3);
+  color: #333;
+}
+
+.ballsOutput {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.outputText1 {
+  font-size: 2.4rem;
+  color: #000;
+}
+
+.outputText {
+  font-size: 3rem;
+  color: #000;
+}
+
+@media (min-width: 500px) {
+  .glassContainer {
+    width: 450px;
+    height: 80vh;
+  }
+
+  .ballsInput {
+    width: 70%;
+  }
+
+  .howManyBalls {
+    font-size: 5rem;
+  }
+
+  .icon {
+    font-size: 4.6rem;
+  }
+
+  .ballsOutput {
+    width: 80%;
+  }
+
+  .outputText1 {
+    font-size: 3.5rem;
+  }
+
+  .outputText {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .glassContainer {
+    width: 650px;
+    height: 600px;
+  }
+
+  .ballsInput {
+    width: 70%;
+    margin-top: 50px;
+  }
+
+  .howManyBalls {
+    font-size: 6rem;
+  }
+
+  .icon {
+    font-size: 5.6rem;
+    cursor: pointer;
+  }
+
+  .ballsOutput {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .outputText1 {
+    font-size: 4.5rem;
+  }
+
+  .outputText {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .glassContainer {
+    width: 850px;
+    height: 600px;
+  }
+
+  .ballsInput {
+    width: 60%;
+    margin-top: 40px;
+  }
+
+  .howManyBalls {
+    font-size: 7rem;
+  }
+
+  .icon {
+    font-size: 6.6rem;
+    cursor: pointer;
+  }
+
+  .ballsOutput {
+    width: 80%;
+  }
+
+  .outputText1 {
+    font-size: 4.5rem;
+  }
+
+  .outputText {
+    font-size: 4.5rem;
+  }
+}
